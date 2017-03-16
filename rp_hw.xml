@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/arnaldi/Dropbox/rp2016/HW/lago_rp/lago_rp.sch</source>
+    <date>dom 13 mar 2016 09:54:38 ART</date>
+    <tool>Eeschema 4.0.2-4+6225~38~ubuntu14.04.1-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>LAGO - RedPitaya Expansion Board</title>
+        <company>LAGO</company>
+        <rev>v0r1</rev>
+        <date>2016-03-08</date>
+        <source>lago_rp.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Power/" tstamps="/56E562A8/">
+      <title_block>
+        <title>LAGO - RedPitaya Expansion Board</title>
+        <company>LAGO</company>
+        <rev>v0r1</rev>
+        <date>2016-03-08</date>
+        <source>Power.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="JP2">
+      <value>JUMPER</value>
+      <libsource lib="device" part="JUMPER"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56DF7FEF</tstamp>
+    </comp>
+    <comp ref="IC1">
+      <value>AT24LC64-I/SN</value>
+      <footprint>SO8</footprint>
+      <libsource lib="memory" part="AT24CS64-SSHM"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E4B8EB</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E4BC4F</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E4BD69</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E4BDE4</tstamp>
+    </comp>
+    <comp ref="JP1">
+      <value>JUMPER</value>
+      <libsource lib="device" part="JUMPER"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E4C208</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E4CA4D</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>CONN_02X13</value>
+      <libsource lib="conn" part="CONN_02X13"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E4CDC9</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>CONN_02X13</value>
+      <libsource lib="conn" part="CONN_02X13"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E55A5A</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="memory" part="AT24CS64-SSHM">
+      <description>64Kb (8192x8) Serial EEPROM with Unique Serial Number, SO8</description>
+      <docs>http://www.atmel.com/Images/Atmel-8870-SEEPROM-AT24CS64-Datasheet.pdf</docs>
+      <footprints>
+        <fp>SO8*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">AT24CS64-SSHM</field>
+        <field name="Footprint">SO8</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="A1" type="input"/>
+        <pin num="3" name="A2" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="SDA" type="BiDi"/>
+        <pin num="6" name="SCL" type="input"/>
+        <pin num="7" name="WP" type="input"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_02X13">
+      <description>Connector 02x13</description>
+      <footprints>
+        <fp>Pin_Header_Straight_2X13</fp>
+        <fp>Pin_Header_Angled_2X13</fp>
+        <fp>Socket_Strip_Straight_2X13</fp>
+        <fp>Socket_Strip_Angled_2X13</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_02X13</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
+        <pin num="13" name="P13" type="passive"/>
+        <pin num="14" name="P14" type="passive"/>
+        <pin num="15" name="P15" type="passive"/>
+        <pin num="16" name="P16" type="passive"/>
+        <pin num="17" name="P17" type="passive"/>
+        <pin num="18" name="P18" type="passive"/>
+        <pin num="19" name="P19" type="passive"/>
+        <pin num="20" name="P20" type="passive"/>
+        <pin num="21" name="P21" type="passive"/>
+        <pin num="22" name="P22" type="passive"/>
+        <pin num="23" name="P23" type="passive"/>
+        <pin num="24" name="P24" type="passive"/>
+        <pin num="25" name="P25" type="passive"/>
+        <pin num="26" name="P26" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="JUMPER">
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">JUMPER</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="memory">
+      <uri>/usr/share/kicad/library/memory.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+5VDC">
+      <node ref="P1" pin="1"/>
+    </net>
+    <net code="2" name="-3V3D">
+      <node ref="P1" pin="2"/>
+    </net>
+    <net code="3" name="SPI_MOSI">
+      <node ref="P1" pin="3"/>
+    </net>
+    <net code="4" name="SPI_MISO">
+      <node ref="P1" pin="4"/>
+    </net>
+    <net code="5" name="SPI_SCK">
+      <node ref="P1" pin="5"/>
+    </net>
+    <net code="6" name="SPI_CSN">
+      <node ref="P1" pin="6"/>
+    </net>
+    <net code="7" name="UART_TX">
+      <node ref="P1" pin="7"/>
+    </net>
+    <net code="8" name="UART_RX">
+      <node ref="P1" pin="8"/>
+    </net>
+    <net code="9" name="I2C_SCL">
+      <node ref="P1" pin="9"/>
+    </net>
+    <net code="10" name="I2C_SDA">
+      <node ref="P1" pin="10"/>
+    </net>
+    <net code="11" name="AO3">
+      <node ref="P1" pin="20"/>
+    </net>
+    <net code="12" name="Net-(JP2-Pad1)">
+      <node ref="P1" pin="11"/>
+      <node ref="JP2" pin="1"/>
+    </net>
+    <net code="13" name="AI0">
+      <node ref="P1" pin="13"/>
+    </net>
+    <net code="14" name="AI1">
+      <node ref="P1" pin="14"/>
+    </net>
+    <net code="15" name="AI2">
+      <node ref="P1" pin="15"/>
+    </net>
+    <net code="16" name="AI3">
+      <node ref="P1" pin="16"/>
+    </net>
+    <net code="17" name="AO0">
+      <node ref="P1" pin="17"/>
+    </net>
+    <net code="18" name="AO1">
+      <node ref="P1" pin="18"/>
+    </net>
+    <net code="19" name="DIO7_P">
+      <node ref="P2" pin="17"/>
+    </net>
+    <net code="20" name="DIO7_N">
+      <node ref="P2" pin="18"/>
+    </net>
+    <net code="21" name="DIO0_N">
+      <node ref="P2" pin="4"/>
+    </net>
+    <net code="22" name="DIO0_P">
+      <node ref="P2" pin="3"/>
+    </net>
+    <net code="23" name="AO2">
+      <node ref="P1" pin="19"/>
+    </net>
+    <net code="24" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1"/>
+    </net>
+    <net code="25" name="GND">
+      <node ref="IC1" pin="3"/>
+      <node ref="IC1" pin="2"/>
+      <node ref="JP1" pin="2"/>
+      <node ref="JP2" pin="2"/>
+      <node ref="IC1" pin="4"/>
+      <node ref="P2" pin="26"/>
+      <node ref="P2" pin="25"/>
+      <node ref="C1" pin="2"/>
+      <node ref="P1" pin="26"/>
+      <node ref="P1" pin="25"/>
+      <node ref="P1" pin="22"/>
+      <node ref="P1" pin="12"/>
+      <node ref="P1" pin="21"/>
+    </net>
+    <net code="26" name="Net-(P2-Pad21)">
+      <node ref="P2" pin="21"/>
+    </net>
+    <net code="27" name="Net-(P2-Pad22)">
+      <node ref="P2" pin="22"/>
+    </net>
+    <net code="28" name="Net-(P2-Pad23)">
+      <node ref="P2" pin="23"/>
+    </net>
+    <net code="29" name="Net-(P2-Pad24)">
+      <node ref="P2" pin="24"/>
+    </net>
+    <net code="30" name="DIO6_N">
+      <node ref="P2" pin="16"/>
+    </net>
+    <net code="31" name="Net-(P2-Pad20)">
+      <node ref="P2" pin="20"/>
+    </net>
+    <net code="32" name="Net-(P2-Pad19)">
+      <node ref="P2" pin="19"/>
+    </net>
+    <net code="33" name="+3V3D">
+      <node ref="IC1" pin="8"/>
+      <node ref="R2" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="P2" pin="2"/>
+      <node ref="P2" pin="1"/>
+      <node ref="IC1" pin="1"/>
+    </net>
+    <net code="34" name="DIO1_P">
+      <node ref="P2" pin="5"/>
+    </net>
+    <net code="35" name="DIO1_N">
+      <node ref="P2" pin="6"/>
+    </net>
+    <net code="36" name="DIO2_P">
+      <node ref="P2" pin="7"/>
+    </net>
+    <net code="37" name="DIO2_N">
+      <node ref="P2" pin="8"/>
+    </net>
+    <net code="38" name="DIO3_P">
+      <node ref="P2" pin="9"/>
+    </net>
+    <net code="39" name="DIO3_N">
+      <node ref="P2" pin="10"/>
+    </net>
+    <net code="40" name="DIO4_P">
+      <node ref="P2" pin="11"/>
+    </net>
+    <net code="41" name="DIO4_N">
+      <node ref="P2" pin="12"/>
+    </net>
+    <net code="42" name="DIO5_P">
+      <node ref="P2" pin="13"/>
+    </net>
+    <net code="43" name="DIO5_N">
+      <node ref="P2" pin="14"/>
+    </net>
+    <net code="44" name="DIO6_P">
+      <node ref="P2" pin="15"/>
+    </net>
+    <net code="45" name="/CLKP">
+      <node ref="P1" pin="23"/>
+    </net>
+    <net code="46" name="/CLKN">
+      <node ref="P1" pin="24"/>
+    </net>
+    <net code="47" name="I2C0_SCL">
+      <node ref="R3" pin="2"/>
+      <node ref="IC1" pin="6"/>
+    </net>
+    <net code="48" name="I2C0_SDA">
+      <node ref="IC1" pin="5"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="49" name="Net-(IC1-Pad7)">
+      <node ref="JP1" pin="1"/>
+      <node ref="IC1" pin="7"/>
+      <node ref="R1" pin="2"/>
+    </net>
+  </nets>
+</export>
