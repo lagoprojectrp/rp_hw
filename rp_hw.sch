@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:rp_hw-rescue
 LIBS:power
 LIBS:horacio_lib
 LIBS:logo
@@ -19,8 +20,9 @@ LIBS:device
 LIBS:graphic
 LIBS:references
 LIBS:special
+LIBS:lagorp_library
 LIBS:rp_hw-cache
-EELAYER 27 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
